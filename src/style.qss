@@ -1,0 +1,140 @@
+/* Basic Widget Styling */
+QWidget {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    font-family: "Segoe UI", "Roboto", "Helvetica", sans-serif;
+    font-size: 10pt;
+}
+
+/* QMainWindow */
+QMainWindow::separator {
+    background-color: #404040;
+    width: 1px;
+    height: 1px;
+}
+
+/* QTabWidget */
+QTabWidget::pane {
+    border: 1px solid #404040;
+    background-color: #2b2b2b;
+}
+
+QTabBar::tab {
+    background-color: #383838;
+    color: #b0b0b0;
+    padding: 8px 16px;
+    margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #383838; /* Matches bg for seamless look */
+}
+
+QTabBar::tab:selected {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #404040;
+    border-bottom-color: #2b2b2b; /* Hide bottom border */
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+/* The "+" Tab specifically */
+/* Targeted by ObjectName "newTabButton" set in C++ */
+QToolButton#newTabButton {
+    background-color: transparent;
+    color: #b0b0b0;
+    border: 1px solid transparent;
+    border-radius: 4px; /* Match tab radius */
+    padding: 2px 8px;   /* Adjusted padding for better fit */
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+QToolButton#newTabButton:hover {
+    background-color: #404040; /* Match tab hover */
+    color: #ffffff;
+    border: 1px solid #404040;
+}
+
+QToolButton#newTabButton:pressed {
+    background-color: #505050;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #0d6efd; /* Primary Blue from Bootstrap-ish */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #0b5ed7;
+}
+
+QPushButton:pressed {
+    background-color: #0a58ca;
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #808080;
+}
+
+/* QScrollBar */
+QScrollBar:vertical {
+    border: none;
+    background: #2b2b2b;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #505050;
+    min-height: 20px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #606060;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2b2b2b;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #505050;
+    min-width: 20px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #606060;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* QLabel */
+QLabel {
+    color: #f0f0f0;
+}

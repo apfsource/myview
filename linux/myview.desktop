@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=myview
+Comment=Modern Image Viewer
+Exec=myview %f
+Icon=myview
+Terminal=false
+Categories=Graphics;Viewer;
+MimeType=image/jpeg;image/png;image/gif;image/bmp;image/webp;image/tiff;image/svg+xml;image/x-tga;image/vnd.microsoft.icon;
+Keywords=image;viewer;picture;photo;
+StartupNotify=true
